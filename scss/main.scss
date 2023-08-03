@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    background: blue;
+  
+    /* background: linear-gradient(90deg, rgb(67, 65, 170) 17,5%, rgba(31,179,159,1) 100%); */
+    float: left;
+  }
+  
+  /* header */
+  
+  header {
+    background: rgb(240, 243, 72);
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  /* main */
+  
+  main {
+    background-color: rgb(78, 78, 216);
+  }
+  
+  .menu {
+    /* width: 900px; */
+    margin: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -webkit-body;
+  }
+  
+  .logo-home {
+    margin-top: 5px;
+  
+    img {
+      display: flex;
+      width: 250px;
+      height: auto;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  .searchBox {
+    padding-left: 70px;
+    float: right;
+    width: 20%;
+  
+    /* background: rgb(32, 49, 204); */
+    float: inline-start;
+  }
+  
+  .form {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* barra nav */
+  
+  nav {
+    float: right;
+  
+    ul li {
+      list-style: none;
+      margin-left: 75px;
+      padding: 25px 0;
+      float: left;
+      position: relative;
+  
+      a {
+        text-decoration: none;
+        color: light yellow;
+        font-weight: bold;
+  
+        ::before {
+          display: block;
+          content: "";
+          width: 0%;
+          background-color: aliceblue;
+          height: 5px;
+          top: 0;
+          position: absolute;
+          transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  /* contenido presentado */
+  
+  .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .titulo {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 50px;
+  }
+  
+  .caja {
+    img {
+      width: 250px;
+      height: 280px;
+      border-radius: 50px;
+    }
+  
+    margin: 20px;
+    text-align: center;
+  
+    p {
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      font-family: "Trebuchet MS", sans-serif;
+    }
+  }
+  
+  /* footer */
+  
+  footer {
+    /* height: 50px; */
+    /* width: 100%; */
+    /* margin: 0px; */
+    text-align: center;
+    color: yellow;
+    padding: 2rem;
+    background-color: black;
+  }
+  
+  /* index--flex */
+  
+  .text-logo-home {
+    font-family: 'Trebuchet MS';
+  }
+  
+  .text-text-home {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  /* formulario */
+  
+  .input-form {
+    margin: 5px;
+    border: yellow;
+    height: 30px;
+  }
+  
+  .contFlex {
+    gap: 30px;
+    transition: background-color 0.5s;
+  }
+  
+  .images-flex-img {
+    width: 400px;
+    height: 500px;
+    border-radius: 16px;
+  }
+  
+  .images-flex {
+    margin-bottom: 30px;
+  }
+  
+  .images-flex-img:hover {
+    background-color: gray;
+    opacity: 50%;
+  }
+  
+  .logo-home {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .texto-oculto {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    bottom: auto;
+    left: auto;
+    opacity: 0;
+  
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  .articulo-container {
+    position: relative;
+  }
+  
