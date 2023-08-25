@@ -275,6 +275,32 @@ footer {
 
   } */
 
+.input-form {
+  margin: 15px;
+  border: yellow;
+  height: 30px;
+  width: 300px;
+  border-radius: 3px;
+ }
+
+  .continuar-google{
+    display: flex;
+    align-items: center;
+
+  }
+  .parrafo-google{
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+  }
+  .img-google{
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+  }
+
+
 .contFlex {
   gap: 30px;
   transition: background-color 0.5s; }
