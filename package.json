@@ -1,18 +1,26 @@
 {
-  "dependencies": {
-    "node-sass": "^9.0.0",
-    "nodemon": "^3.0.1"
-  },
-  "name": "proyecto",
+  "name": "proyecto-scss_git",
   "version": "1.0.0",
+  "description": "Paquete de SASS IPAC Clothes",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+    "build-css": "node-sass --includ-path scss scss/main.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bautistaverburg/proyecto-scss.git"
+  },
+  "author": "Bautista Verburg",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/Bautistaverburg/proyecto-scss/issues"
+  },
+  "homepage": "https://github.com/Bautistaverburg/proyecto-scss#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
 }

@@ -1,11 +1,17 @@
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
+(function($) {
 
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
-})
+	"use strict";
 
-cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");
-})
+	$('nav .dropdown').hover(function(){
+		var $this = $(this);
+		$this.addClass('show');
+		$this.find('> a').attr('aria-expanded', true);
+		$this.find('.dropdown-menu').addClass('show');
+	}, function(){
+		var $this = $(this);
+			$this.removeClass('show');
+			$this.find('> a').attr('aria-expanded', false);
+			$this.find('.dropdown-menu').removeClass('show');
+	});
+
+})(jQuery);

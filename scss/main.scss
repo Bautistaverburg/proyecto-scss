@@ -1,3 +1,9 @@
+@import "./parciales/formularioContacto";
+@import "./parciales/cajaIndumentaria";
+@import "./parciales/footer";
+@import "./parciales/menuHome";
+@import "./parciales/header";
+
 * {
     padding: 0;
     margin: 0;
@@ -6,50 +12,20 @@
   
   body {
     width: 100%;
-    background: blue;
-  
-    /* background: linear-gradient(90deg, rgb(67, 65, 170) 17,5%, rgba(31,179,159,1) 100%); */
     float: left;
   }
   
   /* header */
   
   header {
-    background: rgb(240, 243, 72);
+    background: gray;
     width: 100%;
     clear: both;
     content: "";
     display: table;
   }
   
-  /* main */
-  
-  main {
-    background-color: rgb(78, 78, 216);
-  }
-  
-  .menu {
-    /* width: 900px; */
-    margin: 0 auto;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: -webkit-body;
-  }
-  
-  .logo-home {
-    margin-top: 5px;
-  
-    img {
-      display: flex;
-      width: 250px;
-      height: auto;
-      padding: 10px;
-      align-items: center;
-      justify-content: center;
-    }
-  }
+
   
   .searchBox {
     padding-left: 70px;
@@ -114,47 +90,9 @@
     font-size: 50px;
   }
   
-  .caja {
-    img {
-      width: 250px;
-      height: 280px;
-      border-radius: 50px;
-    }
-  
-    margin: 20px;
-    text-align: center;
-  
-    p {
-      text-align: center;
-      font-size: 15px;
-      font-weight: bold;
-      font-family: "Trebuchet MS", sans-serif;
-    }
-  }
-  
-  /* footer */
-  
-  footer {
-    /* height: 50px; */
-    /* width: 100%; */
-    /* margin: 0px; */
-    text-align: center;
-    color: yellow;
-    padding: 2rem;
-    background-color: black;
-  }
   
   /* index--flex */
-  
-  .text-logo-home {
-    font-family: 'Trebuchet MS';
-  }
-  
-  .text-text-home {
-    font-size: 30px;
-    font-weight: 600;
-  }
-  
+ 
   /* formulario */
   
   .input-form {
@@ -167,20 +105,18 @@
     gap: 30px;
     transition: background-color 0.5s;
   }
-  
-  .images-flex-img {
-    width: 400px;
-    height: 500px;
-    border-radius: 16px;
-  }
-  
+
   .images-flex {
     margin-bottom: 30px;
-  }
-  
-  .images-flex-img:hover {
-    background-color: gray;
-    opacity: 50%;
+    &-img:hover {
+      background-color: gray;
+      opacity: 50%;
+    }
+    &-img {
+      width: 400px;
+      height: 500px;
+      border-radius: 16px;
+    }
   }
   
   .logo-home {
